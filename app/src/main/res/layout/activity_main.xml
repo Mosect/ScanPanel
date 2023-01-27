@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_autostart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="自动模式测试" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_manual"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="非自动模式测试" />
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/cb_front"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="前置摄像头" />
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/cb_useTextureView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="使用TextureView" />
+</LinearLayout>

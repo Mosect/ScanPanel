@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.mosect.lib.scanpanel.ScanPanel
+        android:id="@+id/sp_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:scanAutostart="false"
+        app:scanDecoder="com.mosect.app.scanpanel.ZxingDecoder"
+        app:scanUseTextureView="false" />
+</LinearLayout>
