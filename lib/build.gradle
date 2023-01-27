@@ -1,6 +1,9 @@
 plugins {
     id 'com.android.library'
+    id 'maven-publish'
 }
+
+def libVersion = '1.0.1'
 
 android {
     compileSdk 32
@@ -33,4 +36,19 @@ dependencies {
 
     implementation 'com.github.Mosect:EasyGL2:1.0.3'
 
+}
+
+// Because the components are created only during the afterEvaluate phase, you must
+// configure your publications using the afterEvaluate() lifecycle method.
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+                groupId = 'com.mosect'
+                artifactId = 'ScanPanel'
+                version = libVersion
+            }
+        }
+    }
 }
